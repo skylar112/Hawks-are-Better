@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href="images\Eagles.ico" type='image/x-icon'/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel='icon' href="images\Eagles.ico" type='image/x-icon' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <title>Eagles Day Planner</title>
-
- 
 </head>
+
 <body>
-  
-    
-    <div class="jumbotron">
-      <br><br>
-      <h1 class="display-4">Your Philadelphia Eagles 9 to 5 Daily Planner</h1>
-      <br><br><br>
-      <p class="lead">Simple application for you to input your tasks and save.</p>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <hr class="my-4">
-    </div>
-    <div class="container-fluid" max-width:400px>
-    <div class="row" id="hr-9">
+  <div class="jumbotron">
+    <br><br>
+    <h1 class="display-4">Work Day Scheduler</h1>
+    <br><br><br>
+    <p class="lead">Simple application for you to input your tasks and save.</p>
+    <h2 id="today">Now</h2>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr class="my-4">
+  </div>
+
+  <div class="container-fluid" max-width:400px>
+    <div class="row time-block" id="hr-9">
       <div class="col-lg-1">9am</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
-    <BR>
-    <div class="row" id="hr-10">
+    <br>
+
+    <div class="row time-block" id="hr-10">
       <div class="col-lg-1">10am</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-11">
+
+    <div class="row time-block" id="hr-11">
       <div class="col-lg-1">11am</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-12">
+
+    <div class="row time-block" id="hr-12">
       <div class="col-lg-1">12pm</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-1">
+
+    <div class="row time-block" id="hr-1">
       <div class="col-lg-1">1pm</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-2">
+
+    <div class="row time-block" id="hr-2">
       <div class="col-lg-1">2pm</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-3">
+
+    <div class="row time-block" id="hr-3">
       <div class="col-lg-1">3pm</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-4">
+
+    <div class="row time-block" id="hr-4">
       <div class="col-lg-1">4pm</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
     <BR>
-    <div class="row" id="hr-5">
+
+    <div class="row time-block" id="hr-5">
       <div class="col-lg-1">5pm</div>
       <textarea class="col-lg-10 description"></textarea>
       <button class="btn btn-primary save-btn">Save</button>
     </div>
 
   </div>
-
-  <script
-  src="https://code.jquery.com/jquery-3.5.0.min.js"
-  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script>
-    let m =
-
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+ 
+  
   <script src="script.js"></script>
   <footer id="sticky-footer" class="py-4">
     <div class="container text-center">
-      <small><Copyright &copy; Chu Lin 2020</small>
+      <small>
+        <Copyright &copy; Chu Lin 2020></Copyright></small>
     </div>
   </footer>
-  
+
 </html>
