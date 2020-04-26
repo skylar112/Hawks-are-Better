@@ -1,4 +1,23 @@
-body {
+
+.jumbotron
+{
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/61IZpaGfdGL._AC_SL1000_.jpg');
+  text-align: center;
+  border-bottom: 25px solid #A5ACAF;
+  background-size: cover;
+  background-position: center center;
+  height: 850px;
+  padding-bottom: 5rem;
+}
+
+.container-fluid
+{
+  max-width: 80%;
+}
+
+
+body 
+{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   line-height: 1;
@@ -8,22 +27,51 @@ body {
   background-attachment: fixed;
 }
 
-.jumbotron
+
+textarea
 {
-  background-image: url('https://images-na.ssl-images-amazon.com/images/I/61IZpaGfdGL._AC_SL1000_.jpg');
-  text-align: center;
-  border-bottom: 25px solid #A5ACAF;k;
-  background-size: cover;
-  background-position: center center;
-  padding-bottom: 5rem;
+  width: 60%;
+  opacity: 60%;
+  height: 120px;
+  padding-bottom: 30px;
+  padding: right 20px; ;
+  border-radius: 10px;
+  line-height: 100%;
 }
 
+/*Football save button*/
+.save-btn
+{
+  background-color:  #A5ACAF;
+  font-size: 40px;
+  padding-left: 25px ;
+  border-radius: 10px;
+  border: 3px solid black; 
+  width: 6%;
+  margin-right: 40px;
+}
+
+/*Button hover*/
+.save-btn:hover {
+  background-color: black 
+  color: white;
+}
+
+/*Manipulates the color for date and year container */
+#today
+{
+  color: white;
+}
+
+/* Manipulates "Go Eagles!" within the container*/
 .display-4
 {
   color:white;
+  height: -40px;
   font-weight: bold;
 }
 
+/* Manipulates "Input your tasks, and meetings below. Make sure you hit that save button!" within the container*/
 .lead
 {
   font-size: 35px;
@@ -31,18 +79,12 @@ body {
   font-weight: bold;
 }
 
+
+/* All the rows of time blocks will have Eagles silver */
 .row  
 {
+  
   color: #A5ACAF;
   font-size: 32px;
 }
-.sticky-footer {
-  position: fixed;
-  color: white;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
 

@@ -1,17 +1,17 @@
 $(document).ready(function(){
+  //Allows the use of moment.JS for input on date and year
   var now = moment().format('MMMM Do YYYY');
   console.log(now);
   $("#today").text(now);
-
+  //Button with function that allows the user input from every hour block way below to be saved into local storage
   $(".save-btn").on("click", function(){
     var activity = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
     console.log(time);
 
-
     localStorage.setItem(time, activity);
     console.log(localStorage);
-    
+      
   })
   //create a function that compares our hour to moments hour.  If statement that add class of past, present or future.
   function hourChecker() {
@@ -19,10 +19,12 @@ $(document).ready(function(){
     $(".time-block").each(function() {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
      
-      if (blockHour < currentHour) {
+      if (blockHour < currentHour) 
+      {
         $(this).addClass("past");
       }
-      else if (blockHour === currentHour){
+      else if (blockHour === currentHour)
+      {
         $(this).removeClass("past")
         $(this).addClass("present");
       }
@@ -30,9 +32,11 @@ $(document).ready(function(){
         $(this).removeClass("past")
         $(this).removeClass("present")
         $(this).addClass("future");
-        }
+      }
     })
   }
+
+  //Hour checker allows user input in every hour block below to be storage into local storage
   hourChecker();
 
   $("#hr-9 .description").val(localStorage.getItem("hr-9"));
@@ -52,12 +56,5 @@ $(document).ready(function(){
   $("#hr-4 .description").val(localStorage.getItem("hr-4"));
 
   $("#hr-5 .description").val(localStorage.getItem("hr-5"));
-
   
-    
-    
-
-
-
-
 })
