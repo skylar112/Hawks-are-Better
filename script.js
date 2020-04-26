@@ -18,16 +18,20 @@ $(document).ready(function(){
     var currentHour = moment().hours();
     $(".time-block").each(function() {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
-     
+     //If statement for if the user input hour block is less than the current time
       if (blockHour < currentHour) 
       {
-        $(this).addClass("past");
+        $(this).addClass("past"); 
       }
+
+      //else statement if the user input hour is equal to the current time
       else if (blockHour === currentHour)
       {
         $(this).removeClass("past")
         $(this).addClass("present");
       }
+
+      //else statement to remove past and present class, if the input hour is greater than the current time
        else {
         $(this).removeClass("past")
         $(this).removeClass("present")
